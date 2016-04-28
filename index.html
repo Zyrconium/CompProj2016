@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Computing Project</title>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <noscript>This game requires Javascript to function.
+            Please it turn on and enjoy!</noscript>
+        <div id="gameContainer">
+            <canvas id="display" width=900 height=600>
+                If you're seeing this, use a modern browser that supports canvas elements!
+            </canvas>
+        </div>
+        <div id="images">
+            <img id="archerSprite" src="img/archer.png">
+            <img id="hArcherSprite" src="img/horseArcher.png">
+            <img id="basicPlayerSprite" src="img/basicPlayer.png">
+            <img id="basicBulletSprite" src="img/basicBullet.png">
+            <img id="warriorSprite" src="img/warrior.png">
+        </div>
+        <div id="audio">
+            <div id="sfx">
+                <audio id="achDie" src="sfx/achDie.wav"></audio>
+                <audio id="achShoot" src="sfx/achShoot.wav"></audio>
+                <audio id="hrsDie" src="sfx/hrsDie.wav"></audio>
+                <audio id="lvlOver" src="sfx/lvlOver.wav"></audio>
+                <audio id="plrDie" src="sfx/plrDie.wav"></audio>
+                <audio id="plrHit" src="sfx/plrHit.wav"></audio>
+                <audio id="plrShoot" src="sfx/plrShoot.wav"></audio>
+                <audio id="wallHit" src="sfx/wallHit.wav"></audio>
+            </div>
+            <div id="music">
+                <audio id="track1" src="music/Video%20Game%20Music%20Trial%202%20-%20Track%201%20-%20Arpeggiator.mp3"></audio>
+                <audio id="track2" src="music/Video%20Game%20Music%20Trial%202%20-%20Track%202%20-%20Bass.mp3"></audio>
+                <audio id="track3" src="music/Video%20Game%20Music%20Trial%202%20-%20Track%203%20-%20Lead%202.mp3"></audio>
+                <audio id="track4" src="music/Video%20Game%20Music%20Trial%202%20-%20Track%204%20-%20Bass%20D1.mp3"></audio>
+                <audio id="track5" src="music/Video%20Game%20Music%20Trial%202%20-%20Track%205%20-%20Audio%20Track.mp3"></audio>
+                <audio id="track6" src="music/Video%20Game%20Music%20Trial%202%20-%20Track%206%20-%20Chip%20Bridge%202.mp3"></audio>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/engine.js"></script>
+        <script src="js/renderer.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/bullet.js"></script>
+        <script src="js/input.js"></script>
+        <script src="js/enemy.js"></script>
+        <script src="js/obstacle.js"></script>
+        <script src="js/music.js"></script>
+    </body>
+</html>
