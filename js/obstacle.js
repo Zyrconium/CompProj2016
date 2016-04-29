@@ -27,9 +27,9 @@ Obstacle.prototype.draw = function() {
     }
 	if(this.type == "blueRock")
     {
-        context.fillStyle = "rgb(100,100,255)";
+        context.fillStyle = "rgb(255,255,255)";
 		context.font = "28px Times New Roman";
-		context.fillText("Thanks for playing!", Renderer.getRealX(this.x), Renderer.getRealY(this.y));
+		context.fillText("Thanks for playing!", Renderer.getRealX(this.x-20), Renderer.getRealY(this.y));
     }
 	else{
 		context.fillRect(Renderer.getRealX(this.x), Renderer.getRealY(this.y), Renderer.getRealX(this.width), Renderer.getRealY(this.height));
