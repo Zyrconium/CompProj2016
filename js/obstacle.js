@@ -22,14 +22,18 @@ Obstacle.prototype.draw = function() {
     if (this.type == "portal") {
         context.fillStyle = "rgb(255,255,0)";
     }
-    else if(this.type == "blueRock")
-    {
-        context.fillStyle = "rgb(100,100,255)";
-    }
     else {
         context.fillStyle = "rgb(200,200,200)";
     }
-    context.fillRect(Renderer.getRealX(this.x), Renderer.getRealY(this.y), Renderer.getRealX(this.width), Renderer.getRealY(this.height));
+	if(this.type == "blueRock")
+    {
+        context.fillStyle = "rgb(100,100,255)";
+		context.font = "28px Times New Roman";
+		context.fillText("Thanks for playing!", Renderer.getRealX(this.x), Renderer.getRealY(this.y));
+    }
+	else{
+		context.fillRect(Renderer.getRealX(this.x), Renderer.getRealY(this.y), Renderer.getRealX(this.width), Renderer.getRealY(this.height));
+	}
 };
 
 Obstacle.prototype.update = function()
