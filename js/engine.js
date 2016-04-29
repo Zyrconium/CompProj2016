@@ -145,8 +145,8 @@ Engine.switchLevel = function(levelName)
 
 Engine.reset = function()
 {
-    Engine.switchLevel(0);
     Engine.entities[0] = new Player();
+    Engine.switchLevel(1);
     Engine.running = true;
 };
 

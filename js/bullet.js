@@ -10,7 +10,7 @@ var Bullet = function(x, y, direction/*vector*/, speed, type, team){
     this.speed = speed || 4/17;
     this.type = type || "basic"; //default to "basic"
     this.team = team || "friendly";
-    this.image = {basic: document.getElementById("basicBulletSprite")};
+    this.image = {basic: document.getElementById("basicBulletSprite"), arrow: document.getElementById("basicArrowSprite")};
     this.damage = {basic: 2, arrow: 1};
     this.width = 2;
     this.height = 10;
@@ -25,7 +25,7 @@ Bullet.prototype.draw = function(){
 
     context.translate(Renderer.getRealX(this.x), Renderer.getRealY(this.y));
     context.rotate(-Math.atan2(this.direction.x, this.direction.y));
-    if(this.type=="basic")
+    if(this.type=="basic"||this.type=="arrow")
     {
         context.drawImage(this.image[this.type], 0, 0, Renderer.getRealX(this.width), Renderer.getRealY(this.height));
     }

@@ -63,7 +63,6 @@ Input.onKeyDown = function(event){
     if (event.code == "KeyR")
     {
         Engine.reset();
-        Engine.switchLevel(1);
         Engine.started = true;
     }
 

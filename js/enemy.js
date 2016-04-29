@@ -120,7 +120,6 @@ Enemy.prototype.archerUpdate = function(timePassed)
         }
         this.shootDuration -= timePassed;
         if (this.shootDuration <= 0) {
-            console.log("yes");
             this.fire();
             this.shootDuration = 0;
             this.shooting = false;
@@ -173,7 +172,6 @@ Enemy.prototype.fire = function()
 
 Enemy.prototype.hit = function(damage)
 {
-    console.log(Engine.entities);
     this.hp -= damage;
     if(this.hp<=0)
     {

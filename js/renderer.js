@@ -55,10 +55,11 @@ Renderer.display = function(timePassed){
 
 Renderer.showDead = function()
 {
-    context.fillStyle = "rgb(255,255,255)";
+    var context = Renderer.context;
+    context.fillStyle = "rgb(255,150,150)";
     context.font="44px Times New Roman";
     context.fillText("You Died", Renderer.getRealX(100), Renderer.getRealY(140));
-}
+};
 
 
 
